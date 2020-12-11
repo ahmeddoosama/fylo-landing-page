@@ -1,0 +1,52 @@
+// desc: 'Contain Utilities styles'
+
+// Utilities Variables
+@import './variables';
+@import './colors';
+
+
+/***
+*
+====================================================================
+    Global Settings
+====================================================================
+*
+***/
+
+html {
+    box-sizing: border-box;
+    // -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // font-size: $body-font-size;
+    // font-family: $body-font-family;
+    // background-color: $Light-grayish-blue;
+    // font-weight: $font-weight-500;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    &:hover {
+        text-decoration: none;
+    }
+}
