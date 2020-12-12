@@ -1,5 +1,5 @@
 // desc: 'Contain all website initial values for sections and headlines and divs and main inheritance for others'
-@import "../partials/colors";
+@import "./colors";
 
 
 // Fonts Weight
@@ -7,8 +7,13 @@ $font-weight-100: 100;
 $font-weight-400: 400;
 $font-weight-500: 500;
 $font-weight-600: 600;
+$font-weight-700: 700;
 $font-weight-bold: bold;
 $font-weight-bolder: bolder;
+
+// Fonts Family
+$body-font-family: "Barlow Semi Condensed", sans-serif;
+$title-font-family: 'Raleway', sans-serif;
 
 // Text Aligns
 $text-align-center: center;
@@ -16,10 +21,11 @@ $text-align-left: left;
 $text-align-right: right;
 
 // Body Variable
-$body-font-size: 13px;
-$body-font-family: "Barlow Semi Condensed", sans-serif;
+$body-font-size: 14px;
+
 
 
 /* Responsive */
 $smallDevices: "only screen and (max-width: 767px)"; // EX >> @media #{$smallDevices}
+$small_and_Medium_Devices: "only screen and (max-width: 768px)";
 $MediumDevices: "only screen and (min-width: 768px) and (max-width: 1200px)";

@@ -1,8 +1,9 @@
 // desc: 'Contain Utilities styles'
 
 // Utilities Variables
-@import './variables';
 @import './colors';
+@import './variables';
+
 
 
 /***
@@ -27,10 +28,10 @@ html {
 }
 
 body {
-    // font-size: $body-font-size;
-    // font-family: $body-font-family;
-    // background-color: $Light-grayish-blue;
-    // font-weight: $font-weight-500;
+    font-size: $body-font-size;
+    font-family: $body-font-family;
+    background-color: $DarkBlue2;
+    font-weight: $font-weight-500;
 }
 
 ul, ol {
