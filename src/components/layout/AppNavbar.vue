@@ -16,7 +16,7 @@
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <router-link to="/Feature" tag="li" class="nav-item">
+            <router-link to="/Features" tag="li" class="nav-item">
               <a class="nav-link" aria-current="page" href="#">Features</a>
             </router-link>
             <router-link to="/Team" tag="li" class="nav-item">
