@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Features from "../views/Features.vue";
 import Team from "../views/Team.vue";
-import SigIn from "../views/SignIn.vue";
+import SignIn from "../views/SignIn.vue";
 
 Vue.use(VueRouter);
 
@@ -24,9 +24,9 @@ const routes = [
     component: Team
   },
   {
-    path: "/SigIn",
-    name: "SigIn",
-    component: SigIn
+    path: "/SignIn",
+    name: "SignIn",
+    component: SignIn
   }
 ];
 
