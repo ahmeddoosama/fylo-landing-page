@@ -6,7 +6,12 @@
           <img src="../../assets/images/logo/logo.svg" alt="fylo" />
         </router-link>
 
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <b-navbar-toggle target="nav-collapse">
+          <template #default="{ expanded }">
+            <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+            <b-icon v-else icon="chevron-bar-down"></b-icon>
+          </template>
+        </b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
@@ -34,6 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+// Navbar Variables
 @import "../../assets/scss/global/colors.scss";
 @import "../../assets/scss/global/variables.scss";
 
