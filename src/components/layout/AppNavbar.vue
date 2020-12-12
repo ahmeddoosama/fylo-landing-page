@@ -45,10 +45,14 @@ export default {
 
 .appNavbar {
   nav {
+    position: absolute;
+    width: 100%;
+    background-color: $DarkBlue2;
     img {
       width: 100px;
     }
     .navbar-nav {
+      z-index: 2;
       .nav-item {
         .nav-link {
           font-size: 17px;
