@@ -17,13 +17,13 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <router-link to="/Features" tag="li" class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Features</a>
+              <a class="nav-link">Features</a>
             </router-link>
             <router-link to="/Team" tag="li" class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Team</a>
+              <a class="nav-link">Team</a>
             </router-link>
             <router-link to="/SignIn" tag="li" class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Sign In</a>
+              <a class="nav-link">Sign In</a>
             </router-link>
           </b-navbar-nav>
         </b-collapse>
