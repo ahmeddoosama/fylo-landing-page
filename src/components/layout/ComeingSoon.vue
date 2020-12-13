@@ -37,6 +37,7 @@ export default {
   }
 
   @media #{$smallDevices} {
+    padding-top: 60px;
     img {
       width: 250px;
     }

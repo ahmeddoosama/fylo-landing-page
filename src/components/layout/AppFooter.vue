@@ -162,7 +162,22 @@ export default {
         }
       }
     }
-    
+    @media #{$smallDevices} {
+      .footer-body {
+        .dev-location {
+          font-size: 17px;
+        }
+
+        .dev-location,
+        .list-group {
+          margin-bottom: 20px;
+        }
+
+        .social-links {
+          text-align: center;
+        }
+      }
+    }
   }
 }
 </style>
