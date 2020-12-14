@@ -45,9 +45,7 @@ export default {
 
 .appNavbar {
   nav {
-    position: absolute;
-    width: 100%;
-    background-color: $DarkBlue2;
+    background-color: $DarkBlue1;
     img {
       width: 100px;
     }
@@ -63,6 +61,8 @@ export default {
       }
     }
     @media #{$small_and_Medium_Devices} {
+      position: absolute;
+      width: 100%;
       .navbar-nav {
         text-align: start;
         padding-top: 10px;
