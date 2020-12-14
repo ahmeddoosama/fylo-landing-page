@@ -2,6 +2,12 @@
   <div class="home">
     <!-- import Header Component -->
     <appHeader />
+
+    <div class="container">
+    <section class="features-section">
+      
+    </section>
+    </div>
   </div>
 </template>
 
