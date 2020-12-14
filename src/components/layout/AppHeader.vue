@@ -35,7 +35,7 @@ export default {
 
 .appHeader {
     padding: 40px 0;
-    background:$DarkBlue1 url("../../assets/images/background/bg-curvy-desktop.svg") no-repeat bottom right 5px;
+    background:$DarkBlue1 url("../../assets/images/background/bg-curvy-desktop.svg") no-repeat bottom;
     .header__img {
         width: 450px;
     }
@@ -59,15 +59,31 @@ export default {
             padding: 7px 60px;
             font-size: 15px;
             font-weight: 600;
+            background-color: $btn-bg-color;
+            border-color: $btn-bg-color;
+        &:hover {
             background-color: $Cyan;
             border-color: $Cyan;
-        &:hover {
-            background-color: #9ce2dd;
-            border-color: #9ce2dd;
         }
         &:active {
             background-color: $Cyan !important;
             border-color: $Cyan !important;
+        }
+    }
+    @media #{$smallDevices} {
+        background:$DarkBlue1 url("../../assets/images/background/bg-curvy-mobile.svg") no-repeat bottom;
+        background-size: contain;
+        .header__img {
+                margin-top: 50px;
+                width: 75%;
+        }
+        .header__title {
+                font-size: 22px;
+                width: 90%;
+        }
+        .header__description {
+            width: 88%;
+            font-size: 15px;
         }
     }
 }
