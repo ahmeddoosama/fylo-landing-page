@@ -102,6 +102,80 @@
           </b-col>
         </b-row>
       </section>
+
+      <!-- testimonials Section -->
+      <section class="testimonials-section">
+        <b-row>
+          <b-col cols="12" md="4">
+            <div class="testimonial-card bg">
+              <div class="testimonial-card-review">
+                <p>
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+              </div>
+              <div class="testimonial-card-author">
+                <img
+                  class="author-img"
+                  src="../assets/images/persons/profile-1.jpg"
+                  alt="Satish Patel img"
+                />
+                <div class="author-info">
+                  <p class="author-name">Satish Patel</p>
+                  <p class="author-position">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </b-col>
+
+          <b-col cols="12" md="4">
+            <div class="testimonial-card">
+              <div class="testimonial-card-review">
+                <p>
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+              </div>
+              <div class="testimonial-card-author">
+                <img
+                  class="author-img"
+                  src="../assets/images/persons/profile-2.jpg"
+                  alt="Bruce McKenzie"
+                />
+                <div class="author-info">
+                  <p class="author-name">Bruce McKenzie</p>
+                  <p class="author-position">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </b-col>
+
+          <b-col cols="12" md="4">
+            <div class="testimonial-card">
+              <div class="testimonial-card-review">
+                <p>
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+              </div>
+              <div class="testimonial-card-author">
+                <img
+                  class="author-img"
+                  src="../assets/images/persons/profile-3.jpg"
+                  alt="Iva Boyd"
+                />
+                <div class="author-info">
+                  <p class="author-name">Iva Boyd</p>
+                  <p class="author-position">Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+      </section>
     </div>
   </div>
 </template>
@@ -200,6 +274,62 @@ export default {
         p {
           opacity: 90%;
         }
+      }
+    }
+  }
+  .testimonials-section {
+    position: relative;
+    margin: 10% 0;
+    .bg {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 50px;
+        top: -2rem;
+        left: 5px;
+        z-index: -1;
+        background: url("../assets/images/background/bg-quotes.png");
+        background-repeat: no-repeat;
+      }
+    }
+    .testimonial-card {
+      background-color: $DarkBlue1;
+      box-shadow: 5px 3px 8px 1px $DarkBlue1;
+      padding: 25px 25px;
+      text-align: start;
+      .testimonial-card-review {
+        font-size: 15px;
+        opacity: 80%;
+      }
+      .testimonial-card-author {
+        display: flex;
+        margin-top: 20px;
+        .author-img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .author-info {
+          p {
+            margin-bottom: 0;
+          }
+          .author-name {
+            font-weight: 700;
+            font-size: 15px;
+          }
+          .author-position {
+            font-size: 12px;
+            opacity: 70%;
+          }
+        }
+      }
+    }
+    @media #{$smallDevices} {
+      margin: 25% 0;
+      .testimonial-card {
+        margin-bottom: 30px;
       }
     }
   }
