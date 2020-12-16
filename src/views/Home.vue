@@ -176,6 +176,16 @@
           </b-col>
         </b-row>
       </section>
+
+      <!-- Subscribe Section -->
+      <div class="subscribe-section">
+        <h4>Get early access today</h4>
+        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you</p>
+        <form action="" method="POST">
+          <input class="btn-form" type="email" placeholder="email@example.com" />
+          <button class="btn-submit">Get Started Free</button>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -294,8 +304,8 @@ export default {
       }
     }
     .testimonial-card {
-      background-color: $DarkBlue1;
-      box-shadow: 5px 3px 8px 1px $DarkBlue1;
+      background-color: $DarkBlue4;
+      box-shadow: 5px 3px 8px 1px $DarkBlue4;
       padding: 25px 25px;
       text-align: start;
       .testimonial-card-review {
@@ -332,6 +342,72 @@ export default {
         margin-bottom: 30px;
       }
     }
+  }
+  .subscribe-section {
+    background: $DarkBlue1;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0 3px 15px 3px hsl(217, 62%, 11%);
+    margin-bottom: -8rem;
+    position: relative;
+    border-radius: 5px;
+    h4 {
+      font-size: 2rem;
+      font-family: $title-font-family;
+      font-weight: 700;
+    }
+    p {
+      font-size: 15px;
+      width: 90%;
+      margin: 20px auto;
+    }
+    form {
+      .btn-form {
+        width: 500px;
+        max-width: 100%;
+        margin-right: 1.5rem;
+        border: none;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 30px;
+      }
+      .btn-submit {
+        outline: none;
+        border: unset;
+        background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        font-size: 1rem;
+        font-weight: 700;
+        width: 200px;
+        padding: 15px;
+        border-radius: 30px;
+        color: hsl(240, 75%, 98%);
+        &:hover {
+          background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        }
+      }
+    }
+     @media #{$small_and_Medium_Devices} {
+       max-width: 100%;
+       padding: 3rem 30px;
+       h4 {
+         font-size: 20px;
+       }
+       p {
+         font-size: 14px;
+         width: 100%;
+       }
+       form {
+         .btn-form {
+           margin-bottom: 15px;
+         }
+         .btn-submit {
+           width: 225px;
+         }
+       }
+     }
   }
 }
 </style>

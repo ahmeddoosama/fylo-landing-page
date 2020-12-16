@@ -106,7 +106,7 @@ export default {
 
 .appFooter {
   footer {
-    margin-top: 60px;
+    padding-top: 120px;
     text-align: $text-align-left;
     background-color: $DarkBlue3;
     .fotor-logo {
