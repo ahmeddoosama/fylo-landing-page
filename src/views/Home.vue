@@ -180,9 +180,17 @@
       <!-- Subscribe Section -->
       <div class="subscribe-section">
         <h4>Get early access today</h4>
-        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you</p>
+        <p>
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you
+        </p>
         <form action="" method="POST">
-          <input class="btn-form" type="email" placeholder="email@example.com" />
+          <input
+            class="btn-form"
+            type="email"
+            placeholder="email@example.com"
+          />
           <button class="btn-submit">Get Started Free</button>
         </form>
       </div>
@@ -197,8 +205,8 @@ import appHeader from "../components/layout/AppHeader";
 export default {
   name: "Home",
   components: {
-    appHeader,
-  },
+    appHeader
+  }
 };
 </script>
 
@@ -377,7 +385,11 @@ export default {
       .btn-submit {
         outline: none;
         border: unset;
-        background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        background: linear-gradient(
+          to right,
+          hsl(176, 68%, 64%),
+          hsl(198, 60%, 50%)
+        );
         font-size: 1rem;
         font-weight: 700;
         width: 200px;
@@ -385,29 +397,33 @@ export default {
         border-radius: 30px;
         color: hsl(240, 75%, 98%);
         &:hover {
-          background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+          background: linear-gradient(
+            to left,
+            hsl(176, 68%, 64%),
+            hsl(198, 60%, 50%)
+          );
         }
       }
     }
-     @media #{$small_and_Medium_Devices} {
-       max-width: 100%;
-       padding: 3rem 30px;
-       h4 {
-         font-size: 20px;
-       }
-       p {
-         font-size: 14px;
-         width: 100%;
-       }
-       form {
-         .btn-form {
-           margin-bottom: 15px;
-         }
-         .btn-submit {
-           width: 225px;
-         }
-       }
-     }
+    @media #{$small_and_Medium_Devices} {
+      max-width: 100%;
+      padding: 3rem 30px;
+      h4 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+        width: 100%;
+      }
+      form {
+        .btn-form {
+          margin-bottom: 15px;
+        }
+        .btn-submit {
+          width: 225px;
+        }
+      }
+    }
   }
 }
 </style>
